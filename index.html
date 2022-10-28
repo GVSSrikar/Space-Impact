@@ -1,0 +1,197 @@
+<style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    
+
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color:red;
+    }
+    /*
+   .upper-div
+    {
+    display: table;
+
+     border-spacing: 20px;
+     }
+   
+      #center-div1{
+        display: table-cell;
+        
+        top:30px;
+        width: 1rem;
+        height: 1rem;
+        background-color: #ee5253;
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+        animation: hbeat 1s linear infinite;
+      }
+      
+      #center-div1::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #ee5253;
+        
+        position: absolute;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+      #center-div1::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #ee5253;
+        
+        position: absolute;
+        border-radius: 50%;
+        transform: translateX(-50%);
+      }
+
+      #center-div2{
+        display: table-cell;
+        
+        top:30px;
+        width: 1rem;
+        height: 1rem;
+        background-color: #ee5253;
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+        animation: hbeat 1s linear infinite;
+      }
+      
+
+     center-div2::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #ee5253;
+      
+        position: absolute;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+      #center-div2::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #ee5253;
+        
+        position: absolute;
+        border-radius: 50%;
+        transform: translateX(-50%);
+      }
+
+      #center-div3{
+        display: table-cell;
+        
+        top:30px;
+        width: 1rem;
+        height: 1rem;
+        background-color: #ee5253;
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+        animation: hbeat 1s linear infinite;
+      }
+      
+      #center-div3::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #ee5253;
+       
+        position: absolute;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+      #center-div3::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #ee5253;
+        
+        position: absolute;
+        border-radius: 50%;
+        transform: translateX(-50%);
+      }
+      
+      @keyframes hbeat {
+        0% {
+          transform: rotate(45deg) scale(1);
+         
+        }
+        20% {
+          transform: rotate(45deg) scale(1);
+          
+        }
+        40% {
+          transform: rotate(45deg) scale(1.4);
+          
+        }
+        60% {
+          transform: rotate(45deg) scale(1.2);
+          
+        }
+        80% {
+          transform: rotate(45deg) scale(1.4);
+         
+        }
+        100% {
+          transform: rotate(45deg) scale(1);
+          
+        }  */
+
+
+
+      
+  </style>
+  <body>
+  <div style="position: relative;" id="parentDiv">
+    <p  style="position: absolute; z-index: 10; color: white; left: 10px; top: 10px; margin: 0;" >
+      <span>Score:</span> <span id="scoreEl">0</span><br>
+    
+      <!-- <div class="upper-div"> 
+       <div id="center-div1" ></div>
+       <div id="center-div2" ></div>
+       <div id="center-sdiv3" ></div>
+       
+      </div> -->
+      <progress id="health" value="100" max="100"></progress>
+     <a href="shop.html"><button class="button" type="button">Shop</button></a><p></span>
+    </p>
+    <canvas></canvas>
+  </div>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  
+  <script src="./index.js"></script>
+</body>
+  
